@@ -1,0 +1,31 @@
+{
+  "name": "pull-validators-data",
+  "version": "0.0.0",
+  "scripts": {
+    "build": "esbuild src/main.ts --platform=node --bundle --external:@unstoppablejs/* --external:rxjs --external:scale-ts --external:ws --outdir=build --target=esnext --format=esm --sourcemap",
+    "start": "npm run build && node --experimental-json-modules --enable-source-maps ./build/main.js"
+  },
+  "type": "module",
+  "dependencies": {
+    "@unstoppablejs/client": "^0.2.0",
+    "@unstoppablejs/sc-provider": "^0.0.1",
+    "@unstoppablejs/substrate-bindings": "^0.0.1-rc.1",
+    "@unstoppablejs/utils": "^1.1.0",
+    "@unstoppablejs/ws-provider": "^0.0.1",
+    "rxjs": "^7.8.0",
+    "scale-ts": "^0.2.11",
+    "ws": "^8.13.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.11",
+    "@types/ws": "^8.5.4",
+    "esbuild": "^0.17.17",
+    "prettier": "^2.8.7",
+    "typescript": "^5.0.4"
+  },
+  "prettier": {
+    "printWidth": 80,
+    "trailingComma": "all",
+    "semi": false
+  }
+}
