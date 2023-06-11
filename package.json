@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "build": "esbuild src/main.ts --platform=node --bundle --external:@unstoppablejs/* --external:rxjs --external:scale-ts --external:ws --outdir=build --target=esnext --format=esm --sourcemap",
-    "start": "npm run build && node --experimental-json-modules --enable-source-maps ./build/main.js"
+    "start": "npm run build && node --experimental-modules --experimental-json-modules --enable-source-maps ./build/main.js"
   },
   "type": "module",
   "dependencies": {

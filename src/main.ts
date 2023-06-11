@@ -23,7 +23,7 @@ const result = Object.fromEntries(
       {
         votes: votes[idx],
         clusterSize: clusterSizes[idx],
-        comission: comissions[idx],
+        commission: comissions[idx],
         avgEraPoints: points[idx],
         selfStake: selfStake[idx],
       },
