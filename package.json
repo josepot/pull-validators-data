@@ -10,7 +10,7 @@
     "@substrate/connect": "^0.7.29",
     "@unstoppablejs/client": "^0.2.0",
     "@unstoppablejs/sc-provider": "^0.1.0",
-    "@unstoppablejs/substrate-bindings": "^0.0.1-rc.1",
+    "@unstoppablejs/substrate-bindings": "^0.0.1-rc.2",
     "@unstoppablejs/utils": "^1.1.0",
     "@unstoppablejs/ws-provider": "^0.0.1",
     "rxjs": "^7.8.1",
