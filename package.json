@@ -7,7 +7,7 @@
   },
   "type": "module",
   "dependencies": {
-    "@substrate/connect": "^0.7.28",
+    "@substrate/connect": "^0.7.29",
     "@unstoppablejs/client": "^0.2.0",
     "@unstoppablejs/sc-provider": "^0.1.0",
     "@unstoppablejs/substrate-bindings": "^0.0.1-rc.1",
