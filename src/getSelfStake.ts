@@ -1,4 +1,4 @@
-import { getStakingActiveEra, getStakingErasStakers } from "@/api"
+import { getStakingActiveEra, getStakingErasStakers } from "./chain"
 
 const getFormattedSelfStake = (era: number) => async (validator: string) => {
   const selfStakeRaw = await getStakingErasStakers(era, validator)

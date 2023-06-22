@@ -1,4 +1,4 @@
-import { getStakingValidators } from "@/api"
+import { getStakingValidators } from "./chain"
 
 export const getComissions = (validators: string[]) =>
   Promise.all(validators.map(getStakingValidators)).then((validators) =>

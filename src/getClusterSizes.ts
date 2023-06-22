@@ -1,4 +1,4 @@
-import { getIdentityIdentityOf, getIdentitySuperOf } from "@/api"
+import { getIdentityIdentityOf, getIdentitySuperOf } from "./chain"
 
 const textDecoder = new TextDecoder()
 const getDescription = async (validator: string) => {

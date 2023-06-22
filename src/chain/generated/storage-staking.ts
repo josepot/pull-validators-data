@@ -41,6 +41,12 @@ const activeEraDecoder = u32.dec
 export const getStakingActiveEra = () =>
   getFromStorage(activeEraKey, activeEraDecoder)
 
+// Staking.HistoryDepth
+const historyDepthKey = staking("HistoryDepth")()
+const historyDepthDecoder = u32.dec
+export const getStakingHistoryDepth = () =>
+  getFromStorage(historyDepthKey, historyDepthDecoder)
+
 // Staking.ErasStakers
 const erasStakersArgs = staking(
   "ErasStakers",

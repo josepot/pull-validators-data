@@ -1,5 +1,5 @@
 import { lastValueFrom, mergeMap } from "rxjs"
-import { getStakingNominatorsFromKey, stakingNominatorsKeys$ } from "@/api"
+import { getStakingNominatorsFromKey, stakingNominatorsKeys$ } from "./chain"
 
 export const getVotes = async (validators: string[]) => {
   const votes: Map<string, { count: number }> = new Map(
