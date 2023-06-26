@@ -19,18 +19,20 @@ const [comissions, clusterSizes, points, votes, selfStake] = await Promise.all([
 ])
 
 const result = Object.fromEntries(
-  validators.map((v, idx) => {
-    return [
-      v,
-      {
-        votes: votes[idx],
-        clusterSize: clusterSizes[idx],
-        commission: comissions[idx]!,
-        avgEraPoints: points[idx],
-        selfStake: selfStake[idx]!,
-      },
-    ]
-  }),
+  validators
+    .map((v, idx) => {
+      return [
+        v,
+        {
+          votes: votes[idx],
+          clusterSize: clusterSizes[idx],
+          commission: comissions[idx]!,
+          avgEraPoints: points[idx],
+          selfStake: selfStake[idx]!,
+        },
+      ] as const
+    })
+    .sort((a, b) => a[1].avgEraPoints - b[1].avgEraPoints),
 )
 
 const __filename = fileURLToPath(import.meta.url)
